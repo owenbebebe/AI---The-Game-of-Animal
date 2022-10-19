@@ -16,33 +16,45 @@ This Projects creates an Akinator alike game that guesses the user's animal by a
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Loading the Database:  <br/>
+<img src="https://i.imgur.com/ow05yHy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+The database is a txt file that reads in a series of questions and the program would parse the questions and create a tree structure out of it.
+The database is called animalkingdom in this case
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+What the database looks like:  <br/>
+<img src="https://i.imgur.com/wWee8nX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+As you can see the database is a seris of question followed by 1 and 0, 1 means yes and 0 means no.
+The program would read the questions and parse it in a preorder Depth First Traveresal order.
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Guessing the animal: <br/>
+<img src="https://i.imgur.com/z9hGxro.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Once we have the database inputed, the machine is going to ask us a series of questions to guess our animal.
+The animal I was thinking was lion, and the machine guessed it right!
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Fail to guess the animal <br/>
+<img src="https://i.imgur.com/X6IatGd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Let's try a case where the machine could not get the correct animial!
+<br />
+In this case we are thinking about jellyfish. The machine eventually failed to identify the animal, and asked us to insert jellyfish into the database. 
+<br /> 
+It asks for the chracteristic about the jellyfish too, so the machine creates two nodes
+<br /> 
+One with the chracteristic, and one with the question asking "is your animal jellyfish?"
+<br />
+Then, we insert the two nodes into the leaf node that we just left off.
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Export the database with jellyfish in it:  <br/>
+<img src="https://i.imgur.com/EkmwM61.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
 <!--
  ```diff
