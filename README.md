@@ -1,7 +1,13 @@
 <h1>AI - The Game of Animal</h1>
 
 <h2>Description</h2>
-This Projects creates an Akinator alike game that guesses the user's animal by asking some questions from the database. If the machine did not guess the animal right, it would ask the user to provide a chracteristic about the animal in mind and add it into the database. 
+I designed and developed a C++ program that implements the "intelligent" guessing game of animals. The program uses a database of animals and starts with only two animals- a shark and a horse. It then asks the user a series of yes-or-no questions to narrow down the type of animal the user is thinking of. If the computer guesses incorrectly, it asks the user for a new question to add to its database to distinguish the user's animal from the incorrect guess. The computer intelligently places this question where it makes sense.
+
+To implement the program, I created a class hierarchy, including a base class and derived classes for nodes and trees. The program uses a tree data structure to represent the database of animals and their characteristics. The nodes in the tree represent the yes-or-no questions, and the leaves represent the animals. The program allows the user to play multiple games, and the computer learns from its mistakes for subsequent games within the same run of the program.
+
+Additionally, the program has a way to "save" the database as a text file, which allows the user to start from an old database or start fresh with the default shark and horse options. The program is intelligently designed to set up the space for easy search based on the user's answers to given questions.
+
+To demonstrate the functionality of the program, I included a sample database of at least ten animals in the source files for the project. Overall, my program effectively implements the "intelligent" guessing game of animals and provides an intuitive user experience.
 <br />
 
 
